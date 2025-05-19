@@ -1,0 +1,356 @@
+
+<!DOCTYPE html>
+<html lang="ku" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nawras Group - Food Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .language-bar {
+            background-color: #e62129;
+            color: white;
+            padding: 5px 0;
+        }
+        .header {
+            background-color: #e62129;
+            color: white;
+            padding: 0;
+        }
+        .header-title {
+            padding: 10px 20px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        .gold-bar {
+            background-color: #d4a642;
+            height: 10px;
+        }
+        .nav-menu {
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+        }
+        .nav-menu .nav-link {
+            color: #444;
+            padding: 10px 20px;
+            font-weight: bold;
+        }
+        .featured-image {
+            width: 100%;
+            height: auto;
+        }
+        .product-tabs {
+            background-color: #e62129;
+            color: white;
+        }
+        .product-tabs .nav-link {
+            color: white;
+            border-radius: 0;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .product-tabs .nav-link.active {
+            background-color: #b01b22;
+            color: white;
+            border: none;
+        }
+        .product-info {
+            background-color: #f8f8f8;
+            padding: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            overflow: hidden;
+        }
+        .product-card img {
+            width: 100%;
+            height: auto;
+        }
+        .product-card-title {
+            background-color: #f8f8f8;
+            padding: 10px;
+            text-align: center;
+            border-top: 1px solid #ddd;
+        }
+        .carousel-indicators {
+            bottom: 0;
+        }
+        .carousel-indicators li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 5px;
+        }
+        .sidebar-products {
+            margin-top: 20px;
+        }
+        .sidebar-item {
+            background-color: #e62129;
+            color: white;
+            padding: 10px;
+            margin-bottom: 5px;
+            border-radius: 3px;
+        }
+        .sidebar-item i {
+            margin-left: 10px;
+        }
+        .footer {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+        }
+        .logo {
+            max-width: 120px;
+            height: auto;
+        }
+        .logo-container {
+            background-color: #e62129;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .product-description {
+            padding: 15px;
+        }
+        .product-details table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .product-details table td, .product-details table th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: right;
+        }
+        .product-details table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <!-- Language Bar -->
+    <div class="language-bar">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white"><i class="fab fa-facebook-f"></i></a>
+            </div>
+            <div>
+                <a href="#" class="text-white me-2">English</a>
+                <span class="text-white me-2">|</span>
+                <a href="#" class="text-white">العربية</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <div class="header d-flex">
+        <div class="header-title flex-grow-1">
+            FOOD SERVICES
+        </div>
+        <div class="logo-container">
+            <img src="/api/placeholder/120/80" alt="Nawras Group Logo" class="logo">
+        </div>
+    </div>
+
+    <!-- Navigation Menu -->
+    <div class="nav-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <a href="#" class="nav-link">سەرەتا</a>
+                </div>
+                <div class="col text-center">
+                    <a href="#" class="nav-link">بەرهەمەکان</a>
+                </div>
+                <div class="col text-center">
+                    <a href="#" class="nav-link">دەربارەی کۆمپانیا</a>
+                </div>
+                <div class="col text-center">
+                    <a href="#" class="nav-link">پەیوەندی</a>
+                </div>
+                <div class="col text-center">
+                    <a href="#" class="nav-link">کڕیار</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container mt-3">
+        <!-- Hero Section -->
+        <div class="row">
+            <div class="col-md-8">
+                <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/api/placeholder/800/400" class="d-block w-100" alt="Legumes and Lentils">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="bg-danger text-white h-100 d-flex flex-column justify-content-center p-3">
+                    <h4>فاسۆلیای نەورەس</h4>
+                    <h5>لەوانی دیکە جیاوازە</h5>
+                    <div class="mt-auto text-center">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active bg-white" aria-current="true"></button>
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" class="bg-white"></button>
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" class="bg-white"></button>
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" class="bg-white"></button>
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" class="bg-white"></button>
+                            <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="5" class="bg-white"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Tabs -->
+        <div class="product-tabs mt-3">
+            <ul class="nav nav-tabs border-0 justify-content-around" id="productTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="rice-tab" data-bs-toggle="tab" data-bs-target="#rice" type="button" role="tab">برنج</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="legumes-tab" data-bs-toggle="tab" data-bs-target="#legumes" type="button" role="tab">پاقلەمەنی</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="spices-tab" data-bs-toggle="tab" data-bs-target="#spices" type="button" role="tab">بەهارات</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pasta-tab" data-bs-toggle="tab" data-bs-target="#pasta" type="button" role="tab">پاستا</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact" type="button" role="tab">پەیوەندی</button>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="productTabContent">
+            <div class="tab-pane fade show active" id="rice" role="tabpanel" aria-labelledby="rice-tab">
+                <div class="product-info">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="product-details">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <th>ناوی بازرگانی</th>
+                                        <td>نەورەس</td>
+                                    </tr>
+                                    <tr>
+                                        <th>سەرچاوە</th>
+                                        <td>هیندی - بەرازیلی</td>
+                                    </tr>
+                                    <tr>
+                                        <th>بڕوانامە</th>
+                                        <td>ISO9001</td>
+                                    </tr>
+                                    <tr>
+                                        <th>تێبینی</th>
+                                        <td>پارێزراوە بۆ نەورەس گروپ</td>
+                                    </tr>
+                                </table>
+                                <div class="product-description mt-3">
+                                    <p>کۆمپانیای نەورەس لە ساڵی 1989 بووە یەکێک لە باشترین کۆمپانیاکانی هاوردەکردنى خۆراک و مەوادى پاکژکەرەوە. مڕۆ نەورەس گروپ خاوەنی چەندین هێڵی بەرهەمهێنانە لە پێناو خزمەتکردنى بەکارهێنەران. برنجی نەورەس لە باشترین سەرچاوەکانمان بۆ بازار دابین دەکەین و ئەمەش بۆتە هۆی سەرکەوتن و ناوبانگى کۆمپانیاکەمان. زیاتر پەیوەندیمان پێوە بکەن لە ڕێگای ئیمەیڵ و سۆشیال میدیاکان. خۆراکى تەندروست، ژیانى تەندروست!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/api/placeholder/350/200" class="img-fluid mb-3" alt="Spice Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Other tab panes would go here -->
+        </div>
+
+        <!-- Products Showcase -->
+        <div class="products-showcase mt-4">
+            <h4 class="text-center mb-4">بەرهەمەکانی دیکەی نەورەس</h4>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="/api/placeholder/250/150" alt="Rice Product">
+                        <div class="product-card-title">برنج - خۆراکی نەورەس</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="/api/placeholder/250/150" alt="Spices Product">
+                        <div class="product-card-title">خۆراکی نەورەس پاکەتی هەمیشە</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="/api/placeholder/250/150" alt="Legumes Product">
+                        <div class="product-card-title">خۆراکی نەورەس پاکەتی هەمیشە</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="/api/placeholder/250/150" alt="Products Collection">
+                        <div class="product-card-title">خۆراکی نەورەس پاکەتی هەمیشە</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar Products -->
+        <div class="sidebar-products">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sidebar-item">
+                        <i class="fas fa-chevron-down"></i>
+                        بەستەبەندى نەورەسى ناونى دیکە جیاوازە
+                    </div>
+                    <div class="sidebar-item">
+                        <i class="fas fa-chevron-down"></i>
+                        بەستەبەندى نەورەس ناوى دیکە جیاوازە
+                    </div>
+                    <div class="sidebar-item">
+                        <i class="fas fa-chevron-down"></i>
+                        بەستەبەندى نەورەس ناوى دیکە جیاوازە
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <a href="#" class="nav-link">سەرەتا</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#" class="nav-link">بەرهەمەکان</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#" class="nav-link">دەربارەی کۆمپانیا</a>
+                </div>
+                <div class="col-md-3 text-center">
+                    <a href="#" class="nav-link">پەیوەندی</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nawras Logo Footer -->
+    <div class="bg-danger py-2">
+        <div class="container text-center">
+            <img src="/api/placeholder/120/60" alt="Nawras Group Logo" class="logo">
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
